@@ -205,7 +205,6 @@ body{
     height: 50%;
     bottom: 0;
     position: absolute;
-    background-color: blue;
 }
 .white{
     width: 100%;
@@ -298,9 +297,4 @@ body{
 @font-face {
     font-family: "gulzar";
     src: url("./Gulzar-Regular.ttf");
-}
-@media screen and (max-width: 500px) {
-.container{
-    
-}
 }
