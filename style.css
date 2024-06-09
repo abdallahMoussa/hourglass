@@ -1,0 +1,305 @@
+:root{
+    --main-color: white;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: "gulzar";
+    background-color: var(--main-color);
+}
+.container{
+    min-width: 500px ;
+    min-height: 570px;
+    margin: 5vh auto;
+    position: relative;
+}
+.top,.bottom{
+    width: 300px;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+}
+.top .body::before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    border-right: 30px solid #ffffff3d;
+    z-index: 100;
+    border-radius: 50%;
+    right: 30px;
+    transform: rotate(-30deg);
+    z-index: 9999;
+}
+.top .body::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    opacity: .2;
+    z-index: 100;
+    border-radius: 50%;
+    left: 50px;
+    bottom: 0;
+    z-index: 9999;
+
+}
+.bottom .body::before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    border-right: 30px solid rgba(255, 255, 255, 0.24);
+    z-index: 9999;
+    border-radius: 50%;
+    right: 30px;
+    transform: rotate(-30deg);
+}
+.body{
+    width: 230px;
+    height: 230px;
+    border-radius: 50% 50% 0 50%;
+    transform: rotate(45deg);
+    background-color: #dcdcdc;
+    overflow: hidden;
+}
+.bottom{
+    align-items: center;
+    z-index: 99999;
+}
+.bottom .body {
+    transform: rotate(225deg);
+}
+.curve{
+    width: 50px;
+    height: 50px;
+    background-color: #dcdcdc;
+    position: absolute;
+    bottom: calc(50% - 11px);
+    left: calc(50% - 25px);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.curve::after{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 92%;
+    background-color: var(--main-color);
+
+    border-radius: 100% ;
+    right: -72%;
+    z-index: 99;
+}
+.curve::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 92%;
+    background-color: var(--main-color);
+
+    border-radius: 100% ;
+    left: -72%;
+}
+.stand,.stand2{
+    width: 250px;
+    height: 100px;
+    background-color: rgb(10, 2, 78);
+    position: absolute;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+}
+.stand2{
+    border-radius: 10px 10px 0 0;
+    bottom: 20px;
+    background-color: rgb(1, 32, 5);
+}
+.stand::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70%;
+    background-color: var(--main-color);
+
+}
+.stand2::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 45%;
+    color: white;
+    z-index: 999;
+}
+.name{
+    position: absolute;
+    left: 45%;
+    transform: rotate(20deg);
+    color: white;
+    font-weight: lighter;
+}
+.stand2::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 70%;
+    background-color: var(--main-color);
+
+}
+.sand{
+    width: 100%;
+    height: 50%;
+    background-color: #0693e3;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: -14px;
+    left: 75px;
+    z-index: 999;
+}
+.top .sand .khnazeer-flag{
+    margin: 10px auto;
+    display: block;
+    width: 40px;
+    
+}
+.bottom .sand{
+    width: 150%;
+    height: 80%;
+    background-color: goldenrod;
+    transform: rotate();
+    position: absolute;
+    top: -10px;
+    left: -100px;
+    z-index: 999;
+    border-radius: 50% 50% 0 0 ;
+}
+#svg{
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 30px;
+}
+#svg2{
+    /* transform: rotate(-90deg); */
+    position: absolute;
+    top:52px;
+    left: 58px;
+    z-index: 100;
+    transform: rotate(-225deg);
+}
+
+/*flag*/
+.flag{
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    position: absolute;
+    background-color: blue;
+}
+.white{
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    height: 20%;
+    background: linear-gradient(to bottom, gainsboro, black 50%);
+}
+.green{
+    width: 100%;
+    position:absolute;
+    bottom: 20%;
+    color: gainsboro;
+    height: 50%;
+    background: linear-gradient(to bottom, green 10%, gainsboro 60%);
+}
+.red{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: red;
+    right: -20px;
+    bottom: -20px;
+    transform: rotate(45deg);
+    border-radius: 10px;
+}
+/* grain sand */
+
+.grains{
+    width: 5px;
+    height: 50px;
+    z-index: 99999;
+    top: 0px;
+    /* transform: rotate(45deg); */
+    border-radius: 2px;
+    position: absolute;
+    /* left: 50%; */
+    /* margin: auto; */
+}
+.grain{
+    width: 2px;
+    height: 2px;
+    background-color: #0693e3;
+    transform: translateY(-50%);
+    animation: flash .1s linear infinite ;
+}
+
+.grain:nth-child(even){
+    margin: 1px;
+}
+
+.grain:nth-child(n+3){
+    background-color: #036299;
+}
+.grain:nth-child(n+7){
+    background-color: #034d77;
+}
+.grain:nth-child(n+11){
+    background-color: #01324e;
+}
+.grain:nth-child(n+14){
+    background-color: #000f18;
+}
+.grain:nth-child(n+18){
+    background-color: black;
+}
+
+@keyframes flash {
+    0% { transform: translateY(-50%); }
+    100% { transform: translateY(100%); }
+}
+
+.slogen{
+    position: absolute;
+    z-index: 999999;
+    top: 37.5%;
+    left: 30%;
+    color: rgba(8, 12, 70, 0.63);
+    display: block;
+    padding: 10px 10px 0 0;
+    /* padding-top: 30px; */
+    font-size: 30px;
+    /* font-weight: bolder; */
+}
+.slogen span{
+    font-size: 45px;
+    color: rgb(37, 16, 155);
+    text-shadow: 0 0 1px black;
+}
+@font-face {
+    font-family: "gulzar";
+    src: url("./Gulzar-Regular.ttf");
+}
+@media screen and (max-width: 500px) {
+.container{
+    
+}
+}
