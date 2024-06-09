@@ -193,7 +193,7 @@ body{
 #svg2{
     /* transform: rotate(-90deg); */
     position: absolute;
-    top:52px;
+    top:51px;
     left: 58px;
     z-index: 100;
     transform: rotate(-225deg);
